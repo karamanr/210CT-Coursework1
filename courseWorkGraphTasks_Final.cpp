@@ -201,10 +201,24 @@ public:
 			}
 			return false;
 		}
-		
 
 	 }
 
+	bool isConnected(Graph* g)
+	{
+
+	}
+
+	void dijkstra(Graph* g, Vertex* start, Vertex* destination)
+	{
+		if (isPath(start, destination) == false)
+		{
+			cout << "There is not path between these two nodes: " << start->returnValue() << "\n" << destination->returnValue() << endl;
+			return;
+		}
+
+
+	}
 
 };
 
